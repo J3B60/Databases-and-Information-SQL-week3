@@ -1,0 +1,1 @@
+SELECT e.ename, e.hiredate FROM emp e JOIN dept d ON e.deptno = d.deptno WHERE e.deptno = (SELECT deptno FROM emp WHERE ename = 'ALLEN');
