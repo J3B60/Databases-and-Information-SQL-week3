@@ -1,0 +1,1 @@
+SELECT e.ename Manager, COALESCE(f.ename, '-') Employee FROM emp e LEFT OUTER JOIN emp f ON f.mgr = e.empno;
