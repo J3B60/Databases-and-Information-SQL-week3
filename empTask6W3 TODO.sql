@@ -1,0 +1,1 @@
+SELECT e.empno, d.dname FROM emp e JOIN dept d ON e.deptno = d.deptno WHERE (SELECT MIN(sal) FROM emp GROUP BY deptno);
