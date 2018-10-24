@@ -1,0 +1,1 @@
+SELECT dept.dname, emp.ename FROM emp RIGHT OUTER JOIN dept ON emp.deptno = dept.deptno;
