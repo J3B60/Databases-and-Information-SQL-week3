@@ -1,0 +1,1 @@
+SELECT ename, sal FROM emp WHERE sal = (SELECT sal FROM emp WHERE ename = 'SCOTT') AND NOT ename = 'SCOTT';
